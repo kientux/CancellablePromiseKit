@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/johannesd/CancellablePromiseKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/johdoerr'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
   s.tvos.deployment_target = '9.0'
 
-  s.source_files = 'CancellablePromiseKit/Classes/**/*'
+  s.source_files = 'Sources/CancellablePromiseKit/**/*'
   
   # s.resource_bundles = {
   #   'CancellablePromiseKit' => ['CancellablePromiseKit/Assets/*.png']

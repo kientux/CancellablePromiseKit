@@ -6,3 +6,6 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+
+.swiftpm
+Package.resolved
