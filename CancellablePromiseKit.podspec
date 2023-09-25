@@ -27,5 +27,5 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.dependency 'PromiseKit', '~> 6'
+  s.dependency 'PromiseKit', '~> 8'
 end

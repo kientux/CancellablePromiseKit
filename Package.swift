@@ -10,7 +10,7 @@ let package = Package(
             targets: ["CancellablePromiseKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/mxcl/PromiseKit", .upToNextMajor(from: "6.22.0"))
+        .package(url: "https://github.com/mxcl/PromiseKit", .upToNextMajor(from: "8.0.0"))
     ],
     targets: [
         .target(
