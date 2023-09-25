@@ -42,7 +42,7 @@ class WhenFulfilledTests: XCTestCase {
         
         let testValue1 = "test1"
         let testValue2 = "test2"
-        let cancellablePromise = when(fulfilled: [testPromise1.promise, testPromise2.promise])
+        let cancellablePromise: CancellablePromise<[String]> = when(fulfilled: [testPromise1.promise, testPromise2.promise])
         _ = cancellablePromise.done { (strings) in
             if strings == [testValue1, testValue2] {
                 expectation.fulfill()
@@ -110,7 +110,7 @@ class WhenFulfilledTests: XCTestCase {
             cancelExpectation.fulfill()
         }
         
-        let cancellablePromise = when(fulfilled: [testPromise1.promise, testPromise2.promise])
+        let cancellablePromise: CancellablePromise = when(fulfilled: [testPromise1.promise, testPromise2.promise])
         _ = cancellablePromise.catch(policy: .allErrors) { (error) in
             switch error {
             case CancellablePromiseError.cancelled:
